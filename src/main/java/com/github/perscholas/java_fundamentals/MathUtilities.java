@@ -30,12 +30,7 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Short add(short baseValue, short difference) {
-        final int i = baseValue + difference;
-        Integer integerResult = i;
-        if(integerResult <= Short.MAX_VALUE) return i;
-        else {
-            return integerResult;
-        }
+        return (short)(baseValue + difference);
     }
 
     /**
@@ -43,15 +38,8 @@ public class MathUtilities {
      * @param difference value to add to starting value
      * @return sum of `baseValue` and `difference`
      */
-    public Integer add(byte baseValue, byte difference) {
-
-        Integer integerResult = baseValue + difference;
-        if(integerResult <= Byte.MAX_VALUE) {
-            return baseValue + difference;
-        }
-        else {
-            return integerResult;
-        }
+    public Byte add(byte baseValue, byte difference) {
+        return (byte)(baseValue + difference);
     }
 
     /**
@@ -99,15 +87,8 @@ public class MathUtilities {
      * @param difference value to subtract from starting value
      * @return difference between `baseValue` and `difference`
      */
-    public Integer subtract(short baseValue, short difference) {
-
-        Integer integerResult = baseValue - difference;
-        if(integerResult <= Short.MAX_VALUE) {
-            return baseValue - difference;
-        }
-        else {
-            return integerResult;
-        }
+    public Short subtract(short baseValue, short difference) {
+        return (short)(baseValue - difference);
     }
 
     /**
@@ -115,15 +96,9 @@ public class MathUtilities {
      * @param difference value to subtract from starting value
      * @return difference between `baseValue` and `difference`
      */
-    public Integer subtract(byte baseValue, byte difference) {
+    public Byte subtract(byte baseValue, byte difference) {
 
-        Integer integerResult = baseValue - difference;
-        if(integerResult <= Byte.MAX_VALUE) {
-            return baseValue - difference;
-        }
-        else {
-            return integerResult;
-        }
+        return (byte)(baseValue - difference);
     }
 
     /**
@@ -132,7 +107,6 @@ public class MathUtilities {
      * @return difference between `baseValue` and `difference`
      */
     public Float subtract(float baseValue, float difference) {
-
         return baseValue - difference;
     }
 
@@ -142,7 +116,6 @@ public class MathUtilities {
      * @return difference between `baseValue` and `difference`
      */
     public Double subtract(double baseValue, double difference) {
-
         return baseValue - difference;
     }
 
@@ -172,15 +145,9 @@ public class MathUtilities {
      * @param divisor value to divide by
      * @return division of `dividend` by `divisor
      */
-    public Integer divide(short dividend, short divisor) {
+    public Short divide(short dividend, short divisor) {
 
-        Integer integerResult = dividend / divisor;
-        if(integerResult <= Short.MAX_VALUE) {
-            return dividend / divisor;
-        }
-        else {
-            return integerResult;
-        }
+        return (short)(dividend / divisor);
     }
 
     /**
@@ -188,15 +155,9 @@ public class MathUtilities {
      * @param divisor value to divide by
      * @return division of `dividend` by `divisor
      */
-    public Integer divide(byte dividend, byte divisor) {
+    public Byte divide(byte dividend, byte divisor) {
 
-        Integer integerResult = dividend / divisor;
-        if(integerResult <= Byte.MAX_VALUE) {
-            return dividend / divisor;
-        }
-        else {
-            return integerResult;
-        }
+        return (byte)(dividend / divisor);
     }
 
     /**
@@ -245,30 +206,18 @@ public class MathUtilities {
      * @param multiplier value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
-    public Integer multiply(short multiplicand, short multiplier) {
+    public Short multiply(short multiplicand, short multiplier) {
 
-        Integer integerResult = multiplicand * multiplier;
-        if(integerResult <= Short.MAX_VALUE) {
-            return multiplicand / multiplier;
-        }
-        else {
-            return integerResult;
-        }
+        return (short)(multiplicand * multiplier);
     }
     /**
      * @param multiplicand value to be multiplied
      * @param multiplier value to multiply by
      * @return product of `multiplicand` by `multiplier`
      */
-    public Integer multiply(byte multiplicand, byte multiplier) {
+    public Byte multiply(byte multiplicand, byte multiplier) {
 
-        Integer integerResult = multiplicand * multiplier;
-        if(integerResult <= Byte.MAX_VALUE) {
-            return multiplicand / multiplier;
-        }
-        else {
-            return integerResult;
-        }
+        return (byte)(multiplicand * multiplier);
     }
 
     /**
